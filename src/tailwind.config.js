@@ -1,6 +1,5 @@
-const { createGlobPatternsForDependencies } = require('@nx/angular/tailwind');
 const { join } = require('path');
-const sharedTailwindConfig = require('../../tailwind-workspace-preset.js');
+const sharedTailwindConfig = require('../tailwind-workspace-preset.js');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
@@ -8,11 +7,7 @@ module.exports = {
 
   darkMode: ['class', '[data-mode="dark"]'],
 
-  content: [
-    join(__dirname, 'src/**/*.{ts,html}'),
-    join(__dirname, '../../shared/**/*.{ts,html}'),
-    ...createGlobPatternsForDependencies(__dirname),
-  ],
+  content: [join(__dirname, './**/*.{ts,html}')],
 
   theme: {
     extend: {
