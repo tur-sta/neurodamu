@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face{
   font-family:'Inter';
-  src: url('/app/core') format('truetype');
+  src: url('/src/app/core') format('truetype');
   font-weight:100 900;
   font-style:normal;
   font-display:swap;

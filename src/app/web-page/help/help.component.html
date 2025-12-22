@@ -1,0 +1,214 @@
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-10 py-4 lg:py-5">
+    <img
+      ngSrc="assets/images/logo.png"
+      alt="Neurodamu Logo"
+      class="h-7 sm:h-8 w-auto select-none"
+      height="128"
+      width="635"
+    />
+
+    <nav class="hidden md:flex space-x-6 lg:space-x-8 text-gray-800 font-medium">
+      <a routerLink="/" class="hover:text-blue-600 transition">Фонд</a>
+      <a routerLink="/stroke" class="hover:text-blue-600 transition">Инсульт</a>
+      <a class="text-blue-500 font-semibold cursor-default">Помощь</a>
+      <a href="#" class="hover:text-blue-600 transition">Проекты</a>
+      <a routerLink="/test" class="hover:text-blue-600 transition">Тесты</a>
+    </nav>
+
+    <button
+      type="button"
+      class="md:hidden inline-flex items-center justify-center rounded-xl border border-gray-200 px-3 py-2 text-gray-800"
+      (click)="menuOpen = !menuOpen"
+      aria-label="Открыть меню"
+    >
+      <span class="text-xl leading-none">☰</span>
+    </button>
+  </div>
+
+  <div class="md:hidden border-t border-gray-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4" *ngIf="menuOpen">
+      <nav class="flex flex-col gap-3 text-gray-800 font-medium">
+        <a routerLink="/" class="hover:text-blue-600 transition" (click)="menuOpen=false">Фонд</a>
+        <a routerLink="/stroke" class="hover:text-blue-600 transition" (click)="menuOpen=false">Инсульт</a>
+        <span class="text-blue-500 font-semibold">Помощь</span>
+        <a href="#" class="hover:text-blue-600 transition" (click)="menuOpen=false">Проекты</a>
+        <a routerLink="/test" class="hover:text-blue-600 transition" (click)="menuOpen=false">Тесты</a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<section
+  class="relative overflow-hidden bg-gradient-to-r from-[#5569FF] via-[#5D72FF] to-[#2D3CCF] text-white
+         pt-16 sm:pt-20 md:pt-28 pb-16 sm:pb-20 md:pb-32
+         px-4 sm:px-6 md:px-10 md:rounded-b-[40px] shadow-md"
+>
+  <div class="relative z-10 max-w-5xl mx-auto">
+    <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-4 md:mb-6">
+      ПОМОЩЬ
+    </h1>
+
+    <p class="text-sm sm:text-base md:text-xl text-white/90 font-light max-w-3xl leading-snug uppercase">
+      ВОЛОНТЁРСТВО В РЯДАХ БЛАГОТВОРИТЕЛЬНОГО ФОНДА<br class="hidden sm:block" />
+      NEURODAMU
+    </p>
+  </div>
+
+  <div
+    class="absolute bottom-[-90px] right-[-90px]
+           w-[240px] h-[240px]
+           sm:w-[320px] sm:h-[320px]
+           md:bottom-[-140px] md:right-[-160px] md:w-[520px] md:h-[520px]
+           bg-white/10 rounded-full blur-3xl"
+  ></div>
+</section>
+
+<section class="bg-[#EEF0FF] pt-10 sm:pt-14 md:pt-16 pb-8 sm:pb-10">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
+    <div class="bg-[#F5F6FF] rounded-2xl md:rounded-[32px] px-5 sm:px-7 md:px-10 py-8 md:py-10 shadow-sm border border-white/60">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 mb-4 md:mb-6">
+        ПАРТНЕРСТВО С ФОНДОМ
+      </h2>
+
+      <p class="text-sm sm:text-base text-gray-800 leading-relaxed mb-4">
+        Миссия нашего фонда – это оказание комплексной помощи людям, кто участвует в борьбе с инсультом.
+      </p>
+      <p class="text-sm sm:text-base text-gray-800 leading-relaxed mb-4">
+        Многие больницы и клиники нуждаются в помощи по приобретению современного оборудования и техники для своевременного выявления инсульта и оказания помощи пациентам.
+      </p>
+      <p class="text-sm sm:text-base text-gray-800 leading-relaxed mb-4">
+        Мы открыты к совместным информационным кампаниям о проблемах инсульта и пути его профилактики. Для граждан мы проводим информирующие кампании, консультации и иные мероприятия.
+      </p>
+
+      <p class="text-sm sm:text-base text-gray-800 leading-relaxed">
+        По вопросам партнерства и оказания помощи пишите на почту
+        <a href="mailto:info@neuro-damu.kz" class="text-[#5569FF] underline">
+          info&#64;neuro-damu.kz
+        </a>.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="bg-[#EEF0FF] pb-16 sm:pb-20 md:pb-24">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 md:px-10">
+    <div class="bg-white rounded-2xl md:rounded-[32px] px-5 sm:px-7 md:px-10 py-8 md:py-10 shadow-sm border border-[#DADDF8]">
+      <h2 class="text-xl sm:text-2xl md:text-3xl font-extrabold text-gray-900 mb-3 md:mb-4">
+        ОСТАВЬ СВОИ КОНТАКТЫ
+      </h2>
+
+      <p class="text-sm sm:text-base text-gray-700 mb-6 md:mb-8">
+        Открыт прием заявок на волонтёрство в фонд NeuroDamu.
+      </p>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 mb-6">
+        <div>
+          <label class="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
+            ФИО
+          </label>
+          <input
+            type="text"
+            placeholder="Введите ФИО"
+            class="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[#5569FF]"
+          />
+        </div>
+
+        <div>
+          <label class="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
+            Телефон
+          </label>
+          <input
+            type="tel"
+            placeholder="+7 ___ ___ __ __"
+            class="w-full rounded-xl border border-gray-200 px-3 py-2 text-sm outline-none focus:ring-2 focus:ring-[#5569FF]"
+          />
+        </div>
+      </div>
+
+      <div class="mb-6 md:mb-8">
+        <label class="block text-xs font-semibold text-gray-700 mb-2 uppercase tracking-wide">
+          Резюме / сопроводительное письмо
+        </label>
+
+        <div
+          class="w-full rounded-2xl border-2 border-dashed border-[#B9BDEA]
+                 px-4 py-4 sm:py-5
+                 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3
+                 text-sm text-gray-600 bg-[#F7F8FF]"
+        >
+          <span>Выберите файл</span>
+
+          <button
+            type="button"
+            class="w-full sm:w-auto px-4 py-2 rounded-xl bg-[#5569FF] text-white text-xs font-semibold hover:bg-[#4456d6] transition"
+          >
+            Выбрать файл
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="bg-[#DDE0FF] py-10 px-4 sm:px-6 md:px-8 border-t border-[#C3C7FF]">
+  <div class="max-w-6xl mx-auto space-y-10">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-10">
+      <div class="flex flex-col items-start justify-center">
+        <img
+          ngSrc="assets/images/logo.png"
+          alt="Neurodamu logo"
+          width="160"
+          height="60"
+          class="object-contain select-none mb-2 md:mb-0"
+        />
+      </div>
+
+      <div class="flex-1">
+        <h3 class="font-bold text-base sm:text-lg text-gray-900 mb-2">КОНТАКТЫ</h3>
+        <p class="text-gray-800 leading-relaxed text-sm sm:text-base">
+          <span class="font-medium">Мобильный телефон:</span> +7 771 771 1181<br />
+          <span class="font-medium">E-mail:</span>
+          <a href="mailto:info@neuro-damu.kz" class="underline">info&#64;neuro-damu.kz</a>
+        </p>
+      </div>
+
+      <div class="flex-1">
+        <h3 class="font-bold text-base sm:text-lg text-gray-900 mb-2">СОЦИАЛЬНЫЕ СЕТИ</h3>
+        <div class="flex space-x-6 text-gray-800 text-2xl">
+          <a href="#" class="hover:text-blue-600 transition">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#" class="hover:text-pink-500 transition">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="flex-1">
+        <h3 class="font-bold text-base sm:text-lg text-gray-900 mb-2">ССЫЛКИ</h3>
+        <ul class="text-gray-800 space-y-1 text-sm sm:text-base">
+          <li><a href="#" class="hover:text-blue-600 transition">Симптомы инсульта</a></li>
+          <li><a href="#" class="hover:text-blue-600 transition">Профилактика инсульта</a></li>
+          <li><a href="#" class="hover:text-blue-600 transition">Мы сотрудничаем</a></li>
+          <li><a href="#" class="hover:text-blue-600 transition">Реквизиты</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between items-center border-t border-[#C3C7FF] pt-6">
+      <p class="text-gray-700 text-sm text-center md:text-left">
+        © 2025 NeuroDamu. Все права защищены.
+      </p>
+
+      <button
+        type="button"
+        (click)="scrollToTop()"
+        class="mt-4 md:mt-0 bg-[#5569FF] text-white px-6 py-2 rounded-full hover:bg-[#4456d6] transition"
+      >
+        Вернуться наверх ↑
+      </button>
+    </div>
+  </div>
+</footer>

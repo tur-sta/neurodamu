@@ -1,4 +1,6 @@
 @tailwind base;
+@tailwind components;
+@tailwind utilities;
 @layer base {
   :root {
     --color-primary-90: 236, 241, 254;
