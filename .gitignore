@@ -1,4 +1,16 @@
 # See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Angular / Node
+node_modules/
+dist/
+tmp/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Environment
+.env
 
 # Compiled output
 /dist
